@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Internship.TB/Complete/Clock/app/src/main/res/drawable-v24/ic_radiu.xml" value="0.1" />
+        <entry key="..\:/Internship.TB/Complete/Clock/app/src/main/res/drawable/ic_button.xml" value="0.2595" />
         <entry key="..\:/Internship.TB/Complete/Clock/app/src/main/res/font/adamina.xml" value="0.16666666666666666" />
+        <entry key="..\:/Internship.TB/Complete/Clock/app/src/main/res/layout/activity_buy.xml" value="0.152" />
         <entry key="..\:/Internship.TB/Complete/Clock/app/src/main/res/layout/activity_hello.xml" value="0.15806159420289856" />
-        <entry key="..\:/Internship.TB/Complete/Clock/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Internship.TB/Complete/Clock/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>
   </component>

@@ -2,10 +2,12 @@ package com.example.clock;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
 import android.widget.Chronometer;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView btnStart;
     private TextView btnPause;
     private TextView btnResrt;
+    private ImageView btnBuy;
 
 
     private  long pauseOff;
@@ -26,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
         btnStart = findViewById(R.id.btn_start);
         btnPause = findViewById(R.id.btn_pause);
         btnResrt = findViewById(R.id.btn_resrt);
+        btnBuy =findViewById(R.id.btn_buy);
+
+
+        btnBuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,BuyActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

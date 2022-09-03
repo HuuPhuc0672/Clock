@@ -9,15 +9,17 @@
 
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/img_buy"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/clock" />
@@ -38,51 +40,69 @@
         android:id="@+id/btn_start"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginTop="468dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/ic_radiu"
-        android:backgroundTint="#3399ff"
+        android:backgroundTint="#4da6ff"
         android:gravity="center"
         android:text="Start"
-        android:textColor="@color/black"
 
+        android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <TextView
         android:id="@+id/btn_pause"
 
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginTop="176dp"
         android:background="@drawable/ic_radiu"
-        android:backgroundTint="#ff6600"
+        android:backgroundTint="#ff80d5"
         android:gravity="center"
         android:text="Pause"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <TextView
         android:id="@+id/btn_resrt"
         android:layout_width="180dp"
         android:layout_height="60dp"
-        android:layout_marginTop="556dp"
-        android:background="@drawable/ic_radiu"
+        android:layout_marginTop="176dp"
 
-        android:backgroundTint="#ff0000"
+        android:background="@drawable/ic_radiu"
+        android:backgroundTint="#ff4d4d"
         android:gravity="center"
         android:text="Resrt"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <ImageView
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
